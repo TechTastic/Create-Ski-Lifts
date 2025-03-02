@@ -23,8 +23,6 @@ public class CreateSkiLifts {
     public CreateSkiLifts(IEventBus modEventBus, ModContainer modContainer) {
         modEventBus.addListener(this::commonSetup);
 
-        NeoForge.EVENT_BUS.register(this);
-
         modContainer.registerConfig(ModConfig.Type.COMMON, Config.SPEC);
     }
 
